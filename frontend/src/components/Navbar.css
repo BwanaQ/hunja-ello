@@ -1,0 +1,25 @@
+.header {
+    background-color: #FFFFFF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.logo {
+    height: 50px;
+    width: auto;
+}
+.customButton {
+    background-color:#ffffff; /* Custom button color */
+    color: #335C6E;           /* Custom text color */
+    text-transform: none;     /* Keeps the text from being uppercased */
+    border: none;             /* Removes default border */
+    padding: 6px 16px;        /* Adjusts padding */
+    font-size: 2rem;      /* Adjusts font size */
+    cursor: pointer;          /* Changes cursor to pointer */
+    transition: background-color 0.3s, color 0.3s; /* Adds transition effect */
+  }
+  
+  .customButton:hover {
+    color: #5ACCCC;           /* Custom hover color for text */
+    background-color:#ffffff; /* Custom button color */
+  
+}

@@ -1,0 +1,26 @@
+
+.title {
+    color: #335C6E;
+
+}
+.MuiButton-contained.btn-add {
+    margin-top: 10px;
+    align-items: center;
+    background-color: #5ACCCC;
+    border-radius: 32px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    height: 50px;
+    justify-content: center;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+  }
+  
+  .MuiButton-contained.btn-add:hover {
+    background-color: #28B8B8;
+  }

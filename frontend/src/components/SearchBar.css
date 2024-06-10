@@ -1,0 +1,25 @@
+/* Style the text input field */
+.searchBar .MuiInputBase-input {
+    color: rgb(40, 184, 184); /* Custom text color */
+  }
+  
+  /* Style the label */
+  .searchBar .MuiInputLabel-root {
+    color: rgb(40, 184, 184); /* Custom label color */
+  }
+  
+  /* Style the label when focused */
+  .searchBar .MuiInputLabel-root.Mui-focused {
+    color: rgb(30, 154, 154); /* Custom label color when focused */
+  }
+  
+  /* Style the outlined variant border */
+  .searchBar .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: rgb(40, 184, 184); /* Custom border color */
+  }
+  
+  /* Style the border when focused */
+  .searchBar .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: rgb(30, 154, 154); /* Custom border color when focused */
+  }
+  
