@@ -1,18 +1,23 @@
 import React from 'react';
-import { Button, Card, CardContent, CardMedia, Typography, Grid } from '@mui/material';
-
+import { Badge, Button, Card, CardContent, CardMedia, Typography, Grid } from '@mui/material';
+import './ReadingList.css'
 const ReadingList = ({ readingList, onRemove }) => {
   return (
     <Grid container spacing={2}>
+      <Grid item xs={12}>
+        <Typography variant="h4" component="p" className='page-header'>
+            Reading List
+        </Typography>
+      </Grid>
       {readingList.length === 0 ? (
         <Grid item xs={12}>
-          <Typography variant="h6" component="p">
+          <Typography variant="h6" component="p" className='no-books'>
             No books in the reading list.
           </Typography>
         </Grid>
       ) : (
         readingList.map((book, index) => (
-          <Grid item key={index} xs={12} sm={6} md={6} lg={3}>
+          <Grid item key={index} xs={12} sm={6} md={4} lg={2}>
             <Card style={{ marginBottom: '16px' }}>
               <CardMedia
                 component="img"
@@ -21,11 +26,15 @@ const ReadingList = ({ readingList, onRemove }) => {
                 alt={book.title}
               />
               <CardContent>
+                <Badge className="readingLevel" component="div" sx={{ fontSize: '0.8rem' }}>
+                  {book.readingLevel}
+                </Badge>                
                 <Typography
+                  className="title"
                   gutterBottom
                   variant="h5"
                   component="div"
-                  sx={{ fontSize: '22px' }} 
+                  sx={{ fontSize: '0.8rem' }} 
                 >
                   {book.title}
                 </Typography>
@@ -34,10 +43,10 @@ const ReadingList = ({ readingList, onRemove }) => {
                 </Typography>
                 <Button
                   variant="contained"
-                  color="secondary"
+                  className='btn-remove'
                   onClick={() => onRemove(book)}
                 >
-                  Remove from Reading List
+                  Remove
                 </Button>
               </CardContent>
             </Card>

@@ -1,6 +1,8 @@
 
 .title {
     color: #335C6E;
+    
+    font-weight: 700;
 
 }
 .MuiButton-contained.btn-add {
@@ -12,7 +14,7 @@
     color: #ffffff;
     cursor: pointer;
     display: flex;
-    font-size: 16px;
+    font-size: 12px;
     height: 50px;
     justify-content: center;
     max-width: 100%;
@@ -23,4 +25,11 @@
   
   .MuiButton-contained.btn-add:hover {
     background-color: #28B8B8;
+  }
+  .readingLevel{
+    background-color: #FABD33;
+    color: #335C6E;
+    padding: 5px 2px;
+    border-radius: 15px;
+    font-family: 'Mulish';
   }

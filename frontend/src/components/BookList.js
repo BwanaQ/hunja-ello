@@ -1,12 +1,12 @@
 import React from 'react';
-import { Button, Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import { Badge, Button, Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
 import './BookList.css';
 
 const BookList = ({ books, onAdd }) => {
   return (
     <Grid container spacing={2}>
       {books.map((book, index) => (
-        <Grid item key={index} xs={12} sm={6} md={6} lg={3}>
+        <Grid item key={index} xs={12} sm={6} md={4} lg={2}>
           <Card style={{ marginBottom: '16px' }}>
             <CardMedia
               component="img"
@@ -15,7 +15,10 @@ const BookList = ({ books, onAdd }) => {
               alt={book.title}
             />
             <CardContent>
-              <Typography className="title" gutterBottom variant="h5" component="div" sx={{ fontSize: '22px' }}>
+              <Badge className="readingLevel" component="div" sx={{ fontSize: '0.8rem' }}>
+                {book.readingLevel}
+              </Badge>
+              <Typography className="title" gutterBottom variant="h5" component="div" sx={{ fontSize: '0.8rem' }}>
                 {book.title}
               </Typography>
               <Typography variant="body2" color="text.secondary">
